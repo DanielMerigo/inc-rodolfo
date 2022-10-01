@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<!--HEAD = config dos documentos-->
+<head>
+<title>INC</title>
+</head>
+<!--BODY = conteudo da página-->
+<body>
+    <div class="titulos">
+<h1>Primeiro h1</h1>
+<h2>Primeiro h2</h2>
+<h3>Primeiro h3</h3>
+<h4>Primeiro h4</h4>
+<h5>Primeiro h5</h5>
+<h6>Primeiro h6</h6>
+    </div>
+
+    <div class="testando">
+<strong> x </strong> <br />
+<em> x </em> <br />
+<code> x </code> <br />
+<pre> x </pre> <br />
+    </div>
+
+    <div class="imagem">
+        <img src="https://cdn.awsli.com.br/1976/1976530/produto/156816950/2ebcef51be.jpg" alt="café"> <br />
+    </div>
+    <div class="link">
+<a href="https://www.instagram.com/daniel.merigo/" target="blank">  Instagram </a>
+    </div>
+<!-- this is a comment!! -->
+<p>primeiro paragrafo <strong>testando</strong></p>
+
+<p>primeiro paragrafo <strong>testando</strong></p>
+
+<div>header</div>
+<div>section</div>
+<div>footer</div>
+
+<div class="tabela">
+    <table>
+        <!-- this starts the table element -->
+        <thead>
+        <!-- this starts a table header -->
+        <tr>
+        <!-- this starts a table row -->
+        <th>Month</th> <!-- this starts a table header cell -->
+        <th>Savings</th>
+        <th>novo</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- this starts a table body -->
+        <tr>
+        <td>January</td> <!-- this starts a table data cell -->
+        <td>$100</td>
+        <td>max</td>
+
+        </tr>
+        <tr>
+        <td>February</td>
+        <td>$80</td>
+        <td>max</td>
+
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+        <td>Sum</td>
+        <td>$180</td>
+        <td>max</td>
+
+        </tr>
+        <tr>
+        <td>sum</td>
+        <td>min</td>
+        <td>max</td>
+        </tr>
+
+        </tfoot>
+        </table>
+</div>
+
+<div class="lista">
+    <ul>
+        <li> obj </li>
+        <li> rob </li>
+        <li> text </li>
+    </ul>
+</div>
+
+<div class="lista ordenada">
+    <ol>
+        <li>obj</li>
+        <li>obj</li>
+        <li>obj</li>
+    </ol>
+</div>
+
+<div class="formulario">
+
+    <form action="/action-page"> <!--pra onde vai os dados-->
+        <!-- starts a form -->
+        <label for="fname">First name:</label>
+        <!-- starts a form label --><br> <input type="text" id="fname" name="fname" value="Daniel">
+        <!-- starts a form text input --><br>
+        <label for="lname">Last name: </label><br> <input type="text" id="lname" name="lname" value="Merigo"><br />
+        <br>
+        <label for="password">password: </label><br> <input type="password" id="password" name="password"><br />
+        <label for="email">email: </label><br> <input type="email" id="email" name="email" required><br /> <br>
+
+        <p>Please select your age:</p>
+        <input type="radio" id="age1" name="age" value="30">
+        <label for="age1">0 - 30</label><br>
+        <input type="radio" id="age2" name="age" value="60">
+        <label for="age2">31 - 60</label><br>
+        <input type="radio" id="age3" name="age" value="100">
+        <label for="age3">61 - 100</label><br><br>
+
+        <select name="cars" id="cars" multiple>
+
+            <optgroup label="Swedish Cars">
+            <option value="volvo">Volvo</option>
+            <optionvalue="saab">Saab</option>
+            </optgroup>
+            <optgroup label="German Cars">
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+            </optgroup>
+        </select> <br /> <br />
+        <textarea id="w3review" name="w3review"
+        rows="4"
+        cols="50">
+        At w3schools.com you will learn how to make a website.
+        They offer free tutorials
+        in all web development technologies.
+        </textarea>
+        <br> <br>
+        <input type="submit" value="Submit">
+        <button type="button">cancel</button>
+        </form>
+    
+</div>
+<div>
+    <form action="/action">
+    <fieldset>
+    <legend>Person:</legend>
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+
+    <label for="browser">
+    Choose your browser from the list:
+    </label>
+    <input list="browsers" name="browser"
+    id="browser">
+
+    <datalist id="browsers">
+        <option value="Edge">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+    </datalist>
+    
+    <input type="submit" value="Submit">
+    </fieldset>
+    </form>
+</div>
+
+</body>
+
+</html>
