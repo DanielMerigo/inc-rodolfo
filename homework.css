@@ -1,0 +1,9 @@
+body {
+    width: 678px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
