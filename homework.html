@@ -1,79 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="homework.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="homework.css" /> 
+    <style>
+
+    </style>
     <title>homework</title>
-</head>
-<body id="body">
+  </head>
+  <body id="body">
     <header>
-        <h1>INC</h1>
+      <h1 id="INC">INC</h1>
+      <p>A INC é uma igreja muito legal, venha participar!</p>
     </header>
     <nav>
-        <ul>
-            <li>Events</li>
-            <li>News</li>
-            <li>Home churches</li>
-            <li>Sessions</li>
-            <li>Login</li>
-        </ul>
+      <ul>
+        <li>Events</li>
+        <li>News</li>
+        <li>Home churches</li>
+        <li>Sessions</li>
+        <li>Login</li>
+      </ul>
     </nav>
-    <h2>Latest news</h2>
-    <div id="image">
-        <img src="./images/img1.png" alt="" >
-        <hr>
-    </div>
-    <div id="agenda">
-        <h2>Agenda</h2>
-            <table>
-                <!-- this starts the table element -->
-                <thead>
-                <!-- this starts a table header -->
-                <tr>
-                <!-- this starts a table row -->
-                <th>Date / Time</th> <!-- this starts a table header cell -->
-                <th>Event</th>
-                <th>Place</th>
-                </tr>
-                </thead>
-                <tbody>
-                <!-- this starts a table body -->
-                <tr>
-                    <td>21 Sep 19:30</td>
-                    <td>Bible School</td>
-                    <td>CHF <button>i will go!</button></td>
-                </tr>
+    <h1 class="latest-news">Latest news</h1>
+    <section id="image">
+      <img src="./images/img1.png" alt="" />
+      <hr />
+    </section>
+    <section id="agenda">
+      <h2>Agenda</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Date / Time</th>
+            <th>Event</th>
+            <th>Place</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>21 Sep 19:30</td>
+            <td>Bible School</td>
+            <td>CHF <button>i will go!</button></td>
+          </tr>
+          <tr>
+            <td>21 Sep 19:30</td>
+            <td>Leadership School</td>
+            <td>CHF <button>i will go!</button></td>`
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>24 Sep 9:30</td>
+            <td>Business School - Eng Journey</td>
+            <td>CHF <button>i will go!</button></td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+    <br />
+    <br />
 
-                <tr>
-                <td>21 Sep 19:30</td>
-                    <td>Leadership School</td>
-                    <td>CHF <button>i will go!</button></td>
-                </tr>
-
-                </tbody>
-                <tfoot>
-                <tr>
-                <td>24 Sep 9:30</td>
-                <td>Business School - Eng Journey</td>
-                <td>CHF <button>i will go!</button></td>
-        
-                </tfoot>
-                </table>
-    </div> <br /> <br />
-
-    <div>
-        <form action="/action">
+    <section>
+      <form action="/action">
         <fieldset>
-        <legend>Pray request</legend>
-        <label for="pray"></label>
-        <input type="text" id="pray" name="pray" value="I need a new job!" >
-        
-        <input type="submit" value="Submit">
-        </fieldset>
-        </form>
-    </div>
+          <legend>Pray request</legend>
+          <label for="pray"></label>
+          <input type="text" id="pray" name="pray" value="I need a new job!" />
 
-</body>
+          <input type="submit" value="Submit" />
+        </fieldset>
+      </form>
+    </section>
+    <br>
+    <input type="text" placeholder="Digite seu nome!!!!">
+
+    <button>SAVE</button>
+  </body>
 </html>
