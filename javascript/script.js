@@ -37,19 +37,17 @@ const person = {
 
 */
 
-/** 
-const array1 = [11, 6, 7, 8, 9, 15];
-const array2 = []
+// const array1 = [11, 6, 7, 8, 9, 15];
+// const array2 = []
 
-function inverteArray() {
-    for (let i = 0; i < array1.length; i++) {
-        array2[i] = array1[(array1.length-i) -1];
-    }
-    console.log(`Os números da Array eram :${array1}\n`)
-    console.log(`E a ordem dos valores ao contrario fica: ${array2}`)
-}
-inverteArray()
-*/
+// function inverteArray() {
+//     for (let i = 0; i < array1.length; i++) {
+//         array2[i] = array1[(array1.length-i) -1];
+//     }
+//     console.log(`Os números da Array eram :${array1}\n`)
+//     console.log(`E a ordem dos valores ao contrario fica: ${array2}`)
+// }
+// inverteArray()
 
 // const numero = 12345;
 // var resultado = "";

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tios</title>
+    <script>
+
+        const uncles = [ 
+            {
+                name: "Lauro Merigo",
+                childrens: [
+                    { name: "Daniel", age: 21},
+                    { name: "Priscila", age: 28}
+                ]
+            },
+            {
+                name: "Rodrigo",
+                childrens: [
+                    {name: "Lucas", age: 10},
+                    {name: "Miguel", age: 7}
+                ]
+            },
+            {
+                name: "Eduardo",
+                childrens: [
+                    {name: "Duda", age: 4},
+                    {name: "Roberto", age: 2}
+                ]
+            },
+            {
+                name: "Leomar",
+                childrens: [
+                    {name: "Luiza", age: 15},
+                    {name: "Mateus", age: 9}
+                ]
+            }
+        ]
+        // console.log(uncles[0].childrens[0].name)
+        // console.log(uncles[0].childrens[1].name)
+        // console.log(uncles[1].childrens[0].name)
+        // console.log(uncles[1].childrens[1].name)
+        // console.log(uncles[2].childrens[0].name)
+        // console.log(uncles[2].childrens[1].name)
+        // console.log(uncles[3].childrens[0].name)
+        // console.log(uncles[3].childrens[1].name)
+        
+
+
+        // for(let index = 0; index < uncles.length; index++) {
+        //     console.log(uncles[index].name)
+        // }
+
+        //var oldest = {age: 0, name: null};
+        // for(let index = 0; index < uncles.length; index++) {
+        //     for (let i = 0; i < uncles[index].childrens.length; i++) {
+        //         console.log(uncles[index].childrens[i].name)
+        //         console.log(uncles[index].childrens[i].age)
+        //         if(uncles[index].childrens[i].age > oldest.age){ //compara o age atual com o age guardado na variavel de escopo geral
+        //             oldest = uncles[index].childrens[i]
+        //         }
+        //     }
+        //     console.log("\n")
+        //     console.log(`O filho mais velho é ${oldest.name}`)
+            
+        // }
+
+        // uncles.forEach(imprimeUncles);
+
+        // function imprimeUncles(i, indice) {
+        //     console.log(uncles[indice].name)
+        // }
+
+
+        // var oldest = {uncle: null, child: {age: 0, name: null}}
+        // uncles.forEach(function(uncle) {
+        //         uncle.childrens.forEach(function(child) {
+        //             if(child.age > oldest.child.age) {
+        //                 oldest = {
+        //                     uncle: uncle.name,
+        //                     child: child
+        //                 }
+        //             }
+        //         });
+        //     });
+        //     console.log(`O pai do filho mais velho é: ${oldest.uncle}`);
+        //     console.log(`O filho(a) mais velho é: ${oldest.child.name}`);
+
+        //-----------USING flatMap e SORT ----------
+
+         var oldest = {uncle: null, child: {age: 0, name: null}}
+
+        const allChildrens = uncles.flatMap((uncle) => uncle.childrens)
+
+        const ordered = allChildrens.sort((current, previous) => {
+            if(current.age < previous.age) {
+                return -1
+            }
+            if(current.age > previous.age) {
+                return 1
+            }
+            return 0
+        })
+
+        console.log(ordered)
+        console.log("\n", ordered[ordered.length - 1].name)
+
+        // uncles.forEach(function(uncle) {
+        //         uncle.childrens.forEach(function(child) {
+        //             if(child.age > oldest.child.age) {
+        //                 oldest = {
+        //                     uncle: uncle.name,
+        //                     child: child
+        //                 }
+        //             }
+        //         });
+        //     });
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
